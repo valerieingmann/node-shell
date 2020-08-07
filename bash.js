@@ -4,6 +4,7 @@ const pwd = require('./pwd');
 const fs = require('fs')
 const ls = require('./ls')
 // if a user enters 'pwd' as an argument, we can then call it
+process.stdout.write('prompt > ')
 pwd()
-console.log(ls)
-ls()
+
+// ls()
