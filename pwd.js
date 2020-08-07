@@ -1,4 +1,5 @@
 const ls = require("./ls")
+const cat = require("./cat");
 
 module.exports = function () {
     // pwd code
@@ -11,6 +12,9 @@ module.exports = function () {
 
         else if(cmd === "ls")  {
             ls();
+        } else if(cmd === "cat")  {
+            
+            cat(process.cwd());
         } else {
             process.stdout.write('You typed: ' + cmd)
             process.stdout.write('\nprompt > ')
